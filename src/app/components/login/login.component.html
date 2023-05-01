@@ -1,0 +1,60 @@
+<div
+  class="fullpage"
+  style="
+     /* background-image: url(../../../assets/loginbackground3.jpg); */
+     background-image: url(../../../assets/test5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  "
+>
+  <div class="container">
+    <div
+      class="form-container sign-in-container"
+      style="background-color: aquamarine; backdrop-filter: blur(5px)"
+    >
+    <!-- novalidate  -->
+      <form [formGroup]="registerform" >
+        <h1>Sign in</h1>
+
+        <input
+          type="number"
+          formControlName="accNo"
+          [(ngModel)]="loginUser.accNo"
+          placeholder="Enter Account Number"
+        />
+
+                    <div class="form-text text-danger" *ngIf="AccountNo.errors?.['required']&& (AccountNo.touched||AccountNo.dirty)">Account
+                      Number is required</div>
+                    <div class="form-text text-danger" *ngIf="AccountNo.errors?.['pattern']&& (AccountNo.touched||AccountNo.dirty)">
+                      Account Number must be of 10 digits
+                    </div>
+
+        <input
+          type="password"
+          formControlName="pin"
+          [(ngModel)]="loginUser.pin"
+          placeholder="Enter Pin"
+        />
+
+              <div class="form-text text-danger" *ngIf="Pin.errors?.['required']&& (Pin.touched||Pin.dirty)">Pin is required</div>
+              <div class="form-text text-danger" *ngIf="Pin.errors?.['pattern']&& (Pin.touched||Pin.dirty)">
+                Pin must be of four digits only
+              </div>
+
+        <ngx-recaptcha2
+          #captchaElem
+          [siteKey]="siteKey"
+          formControlName="recaptcha"
+        >
+        </ngx-recaptcha2>
+
+        <button type="submit" (click)="onFunctions()">Sign In</button>
+      </form>
+    </div>
+
+    <div class="overlay-container">
+      <div class="overlay"></div>
+    </div>
+  </div>
+</div>

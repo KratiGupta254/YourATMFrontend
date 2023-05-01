@@ -1,0 +1,39 @@
+<div class="flexing background-radial-gradient">
+
+  <app-functions></app-functions>
+
+  <div class="megaContainer">
+
+    <div class="text">
+      <div class="mb-5" style="z-index: 10 ">
+        <h1 class="mb-5 display-5 fw-bold ls-tight" style="color: #1a4c48">
+          Bharat National Bank <br />
+          <span style="color:#0A4D68">-Get the YourATM habit</span>
+        </h1>
+        <p class="mt-4 opacity-70" style="color: #2b4842">
+          We can use customer complaints to improve our service.
+        </p>
+      </div>
+  </div>
+  <div class="container">
+    <form action="action_page.php">
+
+      <h2 style="text-align: center;">Complain Box !!</h2>
+      <div class="form-outline mb-4">
+        <input type="text" [(ngModel)]="complain.complaint" [ngModelOptions]="{standalone: true}" class="form-control"
+        size="500" style="height: 150px; padding-bottom: 100px; " />
+        <label class="form-label" for="form3Example3"> Add Complain here</label>
+      </div>
+      <button type="submit" (click)="onComplain()" style="background-color: #1a4c48; color: white; border-radius: 25px; font-weight: bold; padding: 12px 45px; margin-left: 220px; ">
+        Submit
+      </button>
+
+
+      </form>
+    </div>
+  </div>
+
+
+
+
+

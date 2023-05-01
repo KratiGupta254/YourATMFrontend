@@ -1,0 +1,67 @@
+<div class="main">
+<div class="container" >
+
+  <div class="form-container sign-in-container">
+    <form [formGroup]="signupform" >
+      <h1>Sign up</h1>
+
+      <input type="number"  formControlName="accNo" [(ngModel)]="user.accNo" placeholder="Enter your Account Number" />
+            <div class="form-text text-danger" *ngIf="AccountNo.errors?.['required']&& (AccountNo.touched||AccountNo.dirty)">Account
+              Number is required</div>
+            <div class="form-text text-danger" *ngIf="AccountNo.errors?.['pattern']&& (AccountNo.touched||AccountNo.dirty)">
+              Account Number must be of 10 digits
+            </div>
+
+      <input type="text" formControlName="name" [(ngModel)]="user.name" placeholder="Enter your name here " />
+            <div class="form-text text-danger" *ngIf="Name.errors?.['required']&& (AccountNo.touched||AccountNo.dirty)">
+              Name is required</div>
+
+           <div class="form-text text-danger" *ngIf="Name.errors?.['minlength']&& (Name.touched||Name.dirty)">
+              Name is too short</div>
+            <div class="form-text text-danger" *ngIf="Name.errors?.['pattern']&& (Name.touched||Name.dirty)">
+            Name should start with an alphabet</div>
+
+      <input type="text" formControlName="fatherName" [(ngModel)]="user.fatherName" placeholder="Enter your Father name here" />
+      <div class="form-text text-danger" *ngIf="FatherName.errors?.['required']&& (FatherName.touched||FatherName.dirty)">
+         Father Name is required</div>
+
+      <div class="form-text text-danger" *ngIf="FatherName.errors?.['minlength']&& (FatherName.touched||FatherName.dirty)">
+        Father Name is too short</div>
+      <div class="form-text text-danger" *ngIf="FatherName.errors?.['pattern']&& (FatherName.touched||FatherName.dirty)">
+        Father Name should start with an alphabet</div>
+
+      <input type="email" formControlName="email" [(ngModel)]="user.email" placeholder="Enter you Email here" />
+      <div class="form-text text-danger" *ngIf="Email.errors?.['required']&& (Email.touched||FatherName.dirty)">
+        Email is required</div>
+
+      <div class="form-text text-danger" *ngIf="Email.errors?.['email']&& (Email.touched||Email.dirty)">
+        Enetr valid email Id</div>
+
+      <input type="text" formControlName="address" [(ngModel)]="user.address" placeholder="Enter your Address here" />
+      <div class="form-text text-danger" *ngIf="Address.errors?.['required']&& (Address.touched||FatherName.dirty)">
+        Address is required</div>
+
+      <div class="form-text text-danger" *ngIf="Address.errors?.['maxlength']&& (Address.touched||FatherName.dirty)">
+        Address is too long</div>
+
+      <input type="password" formControlName="pin" [(ngModel)]="user.pin" placeholder="Enter your Pin here" />
+      <div class="form-text text-danger" *ngIf="Pin.errors?.['required']&& (Pin.touched||Pin.dirty)">Pin is required</div>
+      <div class="form-text text-danger" *ngIf="Pin.errors?.['pattern']&& (Pin.touched||Pin.dirty)">
+        Pin must be of four digits only
+      </div>
+
+      <input type="date"  formControlName="dob" [(ngModel)]="user.dob" placeholder="Enter your Date of Birth" />
+      <div class="form-text text-danger" *ngIf="Dob.errors?.['required']&& (Dob.touched||Dob.dirty)">Date of Birth is required</div>
+
+
+      <button type="submit" (click)="onHome()" [disabled]="signupform.invalid" >Sign In</button>
+    </form>
+  </div>
+
+  <div class="overlay-container">
+    <div class="overlay">
+
+    </div>
+  </div>
+</div>
+</div>

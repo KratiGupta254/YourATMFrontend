@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.flexing {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+/* body{
+  overflow-x: hidden;
+    overflow-y: hidden
+} */

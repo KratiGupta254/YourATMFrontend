@@ -1,0 +1,48 @@
+<!--
+<img src="../../../assets/test5.jpg" style="height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;  "> -->
+
+<img class="mainImg" src="../../../assets/test5.jpg" style="height: 100vh">
+
+<div class="sidebar">
+  <img class="sideImg" src="../../../assets/test5.jpg" style="height: 100vh">
+  <!-- <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/atm-location-2010064-1696593.png" class="image"> -->
+  <a [routerLink]="['/functions/deposit']"><i class="fa fa-fw fa-home"></i> Deposit</a>
+  <a [routerLink]="['/functions/withdraw']"><i class="fa fa-fw fa-wrench"></i> Withdraw</a>
+  <a [routerLink]="['/functions/changepin']"><i class="fa fa-fw fa-user"></i> Change Pin</a>
+  <a [routerLink]="['/functions/transactionbox']"><i class="fa fa-fw fa-envelope"></i> Transaction History</a>
+  <a [routerLink]="['/functions/complaintbox']"><i class="fa fa-fw fa-envelope"></i> Complain Box</a>
+  <a (click)="onLogout()"><i class="fa fa-fw fa-envelope"></i> Logout </a>
+
+
+</div>
+
+
+
+<div class="main">
+  <div class="functionImg">
+    <img class="functionImage" src="../../../assets/function1.png">
+    <div class="text">
+      <div class="mb-5" style="z-index: 10 ">
+        <h1 class="mb-5 display-5 fw-bold ls-tight" style="color: #1a4c48">
+          Bharat National Bank <br />
+          <span style="color: #0A4D68">-Get the YourATM habit</span>
+        </h1>
+        <p class="mt-4 opacity-70" style="color: #2a4641">
+          India did not innovate with the ATMs. But when we brought ATMs into India and made the machines talk in 15 regional
+          languages to the people in rural India, we got millions of transactions on the ATM.
+        </p>
+      </div>
+    </div>
+   <!-- <div class="funtionText">
+    <p>Welcome to YOUR ATM</p>
+    <p>BHARAT NATIONAL BANK</p>
+    <p>-Get the YourATM habit</p>
+   </div> -->
+
+  </div>
+
+
+</div>
+<router-outlet></router-outlet>

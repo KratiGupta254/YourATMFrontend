@@ -1,0 +1,89 @@
+
+
+    .background-radial-gradient {
+      background-image: url(../../../assets/test5.jpg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #radius-shape-1 {
+      height: 220px;
+      width: 220px;
+      top: -60px;
+      left: -130px;
+      background: radial-gradient(#04311b, #0a5116);
+      overflow: hidden;
+      top: 10%;
+    }
+
+    #radius-shape-2 {
+      border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+      bottom: -60px;
+      right: -110px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(#44006b, #ad1fff);
+      overflow: hidden;
+      top: 75%;
+    }
+
+    .bg-glass {
+      background-color: hsla(0, 0%, 100%, 0.9) !important;
+      backdrop-filter: saturate(200%) blur(25px);
+    }
+
+
+
+        input[type=text],
+        select,
+        textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical
+
+        }
+
+
+        input[type=submit] {
+          background-color: #04AA6D;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+
+
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+
+
+        .megaContainer{
+          margin-left: 20%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+        }
+        .container {
+          width: 35vw;
+          height: auto;
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+
+        }
+
+        .text{
+          width: 20vw;
+          margin-right: 10vw;
+          margin-left: -2vw;
+
+        }

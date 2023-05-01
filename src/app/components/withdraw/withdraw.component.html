@@ -1,0 +1,39 @@
+<div class="flexing background-radial-gradient">
+
+  <app-functions></app-functions>
+
+  <div class="megaContainer">
+
+    <div class="text">
+      <div class="mb-5" style="z-index: 10 ">
+        <h1 class="mb-5 display-5 fw-bold ls-tight" style="color: #1a4c48">
+          Bharat National Bank <br />
+          <span style="color: #0A4D68">-Get the YourATM habit</span>
+        </h1>
+        <p class="mt-4 opacity-70" style="color: #2a4641">
+          But money is only a tool. It will take you wherever you wish, but it will not replace you as the driver. It will give
+          you the means for the satisfaction of your desires, but it will not provide you with desires
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <form action="action_page.php">
+
+        <h2 style="text-align: center;">Withdraw!!</h2>
+        <!-- <div class="form-outline mb-4">
+          <input type="number" [(ngModel)]="withdraw.accNo" [ngModelOptions]="{standalone: true}" class="form-control" />
+          <label class="form-label" for="form3Example3">Account Number</label>
+        </div> -->
+        <div class="form-outline mb-4">
+          <input type="text" [(ngModel)]="withdraw.withdrawAmt" [ngModelOptions]="{standalone: true}"
+            class="form-control" />
+          <label class="form-label" for="form3Example3"> Amount</label>
+        </div>
+        <button type="submit" (click)="onWithdraw()" style="background-color: #1a4c48; color: white; border-radius: 25px; font-weight: bold; padding: 12px 45px; margin-left: 220px; ">
+          Submit
+        </button>
+
+
+      </form>
+    </div>
+  </div>

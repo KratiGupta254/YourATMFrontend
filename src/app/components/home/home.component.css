@@ -1,0 +1,71 @@
+.banner{
+  background-image: url(../../../assets/homebckgrd.png);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.content{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.banner h1
+{
+  color:#fff;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: math;
+
+}
+
+.banner a{
+    top: 5%;
+    left: 90%;
+    position: absolute;
+    text-decoration: none;
+    background-color: #fff;
+    color: #1a4c48;
+    padding: 15px 20px;
+    border-radius: 25px;
+    min-width: 100px;
+    text-align: center;
+
+    /* position: relative; */
+      top: 8rem;
+      left: 23rem;
+
+}
+
+.banner a:hover{
+  background-color: #1a4c48;
+    color: #fff;
+}
+.login{
+  top: 65%;
+  left: 35%;
+  position: absolute;
+    text-decoration: none;
+    color: #1a4c48;
+    padding: 15px 20px;
+    border-radius: 25px;
+}
+.login a:hover{
+  background-color: #1a4c48;
+    color: #fff;
+}
+
+#signup_a
+{
+    background-color: aquamarin;
+      position: absolute;
+      left: 107rem;
+      top: 3rem;
+      min-width: 100px;
+        text-align: center;
+}

@@ -1,0 +1,32 @@
+<div class="flexing background-radial-gradient">
+  <app-functions></app-functions>
+  <div class="megaContainer">
+    <div class="heading th">
+      <div class="" style="width: 14vw">Date</div>
+      <div class="" style="width: 14vw">Transaction Type</div>
+      <div class="" style="width: 14vw">Amount</div>
+      <!-- <div class="" style="width: 14vw">Balance</div> -->
+    </div>
+    <hr style="width: 70vw" />
+    <div class="wrapper">
+      <div class="th" *ngFor="let history of historyModel">
+        <div class="" style="width: 14vw">
+          {{ history.date }}
+        </div>
+        <div class="" style="width: 14vw; margin-bottom: 10px">
+
+          {{ history.functionalityStatus ? "Withdraw" : "Deposit" }}
+        </div>
+        <div class="" style="width: 14vw">
+          {{ history.amount }}
+        </div>
+
+      </div>
+    </div>
+    <hr style="width: 60vw;">
+    <div class="flex">
+      <p class="">Balance</p>
+      <p class="">{{this.balance}}</p>
+    </div>
+  </div>
+</div>
